@@ -71,7 +71,7 @@ export default function Product() {
           <ul className="list-disc list-inside">
             <li>
               <Link
-                href="/product/prioritization"
+                href="/product/movie-director"
                 className="underline text-orange-500 hover:text-orange-400"
               >
                 The PM as Director
@@ -79,7 +79,7 @@ export default function Product() {
             </li>
             <li>
               <Link
-                href="/product/roadmapping"
+                href="/product/agile-v-scrum"
                 className="underline text-orange-500 hover:text-orange-400"
               >
                 Agile <span>&gt;</span> Scrum
