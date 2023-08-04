@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import { ThemeProvider } from './theme-provider'
 import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 
@@ -37,6 +38,7 @@ export default function RootLayout({
             <div className="mx-auto p-2 max-w-7xl">{children}</div>
           </main>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
