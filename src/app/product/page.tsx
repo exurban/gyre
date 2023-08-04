@@ -36,7 +36,7 @@ export default function Product() {
       <div className="flex flex-row items-center mt-10">
         <div className="basis-1/2">
           <h1 className="font-bold text-4xl">Product thoughts.</h1>
-          <h2 className="text-stone-700 dark:text-stone-300">
+          <h2 className="text-neutral-700 dark:text-neutral-400">
             Sometimes I have thoughts on things. Occasionally, I write them
             down. These are those things.
           </h2>
@@ -72,7 +72,7 @@ export default function Product() {
             <li>
               <Link
                 href="/product/movie-director"
-                className="underline text-orange-500 hover:text-orange-400"
+                className="underline text-rose-500 hover:text-rose-400"
               >
                 The PM as Director
               </Link>
@@ -80,7 +80,7 @@ export default function Product() {
             <li>
               <Link
                 href="/product/agile-v-scrum"
-                className="underline text-orange-500 hover:text-orange-400"
+                className="underline text-rose-500 hover:text-rose-400"
               >
                 Agile <span>&gt;</span> Scrum
               </Link>
@@ -122,7 +122,7 @@ export default function Product() {
             <li>
               <Link
                 href="/product/prioritization"
-                className="underline text-orange-500 hover:text-orange-400"
+                className="underline text-rose-500 hover:text-rose-400"
               >
                 Prioritization
               </Link>
@@ -130,7 +130,7 @@ export default function Product() {
             <li>
               <Link
                 href="/product/roadmapping"
-                className="underline text-orange-500 hover:text-orange-400"
+                className="underline text-rose-500 hover:text-rose-400"
               >
                 Roadmapping
               </Link>
@@ -138,7 +138,7 @@ export default function Product() {
             <li>
               <Link
                 href="/product/modern-prd"
-                className="underline text-orange-500 hover:text-orange-400"
+                className="underline text-rose-500 hover:text-rose-400"
               >
                 The Modern PRD
               </Link>
@@ -162,7 +162,7 @@ export default function Product() {
             <li>
               <Link
                 href="/product/strategy-tactics"
-                className="underline text-orange-500 hover:text-orange-400"
+                className="underline text-rose-500 hover:text-rose-400"
               >
                 Strategy & Tactics
               </Link>
