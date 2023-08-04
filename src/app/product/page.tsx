@@ -153,8 +153,9 @@ export default function Product() {
         strategy. The product strategy serves as the framework for the creation
         of tactics--the objectives to be accomplished in the next 3 to 12
         months, which set the framework within which the IC PM operates.
-        Regardless of which goal-setting system the company uses, all projects
-        should tie directly back to one or more of these objectives.
+        Regardless of which goal-setting system the company uses (SMART, CLEAR,
+        OKRs, etc.), all projects should tie directly back to one or more of
+        these objectives.
         <div className="my-3 text-sm">
           <p className="italic">See also:</p>
           <ul className="list-disc list-inside">
