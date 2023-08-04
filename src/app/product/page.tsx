@@ -193,7 +193,7 @@ export default function Product() {
         conversation starter to discuss the idea with the rest of her team and
         her manager:
       </div>
-      <div className="m-10 p-10 border-2 rounded-none border-slate-500">
+      <div className="m-2 p-2 lg:m-8 lg:p-8 border-2 rounded-none border-slate-500">
         <div className="w-10 mx-auto text-4xl font-bold text-red-500">
           DRAFT
         </div>
