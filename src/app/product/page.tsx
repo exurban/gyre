@@ -1,36 +1,7 @@
 import BlurImage from '../../components/BlurImage'
 import Link from 'next/link'
-import { compareDesc, format, parseISO } from 'date-fns'
-import { allTopics, Topic } from 'contentlayer/generated'
-
-function TopicCard(topic: Topic) {
-  return (
-    <div className="mb-8">
-      <h2 className="mb-1 text-xl">
-        <Link
-          href={topic.url}
-          className="text-blue-700 hover:text-blue-900 dark:text-blue-400"
-        >
-          {topic.title}
-        </Link>
-      </h2>
-      <time dateTime={topic.date} className="mb-2 block text-xs text-gray-600">
-        {topic.date && format(parseISO(topic.date), 'LLLL d, yyyy')}
-      </time>
-      <div className="prose text-sm [&>*]:mb-3 [&>*:last-child]:mb-0">
-        {topic.summary}
-      </div>
-    </div>
-  )
-}
 
 export default function Product() {
-  const posts = allTopics
-    .filter((topic) => topic.date !== undefined)
-    .sort((a, b) =>
-      compareDesc(new Date(a.date as string), new Date(b.date as string))
-    )
-
   return (
     <div className="max-w-2xl mx-auto py-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8 ">
       <div className="flex flex-row items-center mt-10">
@@ -369,15 +340,6 @@ export default function Product() {
           up between October 1 and December 31, 2023, will have access to the
           feature for 60 days following sign up.
         </div>
-      </div>
-      <hr className="my-6" />
-      <div className="mx-auto max-w-xl py-8">
-        <h1 className="mb-8 text-center text-2xl">
-          Product Management Evergreen Topics
-        </h1>
-        {allTopics.map((topic, idx) => (
-          <TopicCard key={idx} {...topic} />
-        ))}
       </div>
     </div>
   )
