@@ -2,18 +2,21 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { ThemeSwitcher } from './ThemeSwitcher'
+import { GyreLogo } from './GyreLogo'
 
 export default function MainNavigation() {
   const pathname = usePathname()
   const navLinks = [
-    { name: 'Gyre', href: '/' },
     { name: 'Sasha', href: '/sasha' },
     { name: 'Product', href: '/product' },
   ]
 
   return (
     <>
+      <Link href="/" className="mx-6">
+        <GyreLogo />
+      </Link>
+
       {navLinks.map((link) => {
         let isActive = false
         if (pathname != null) {
@@ -23,10 +26,8 @@ export default function MainNavigation() {
 
         return (
           <Link
-            className={`mx-6 text-2xl font-light dark:text-slate-200 ${
-              isActive
-                ? 'text-brand-200 border-b-2 border-brand-200'
-                : 'text-coolGray-800'
+            className={`mx-6 text-2xl font-light dark:text-neutral-200 self-center ${
+              isActive ? 'border-b-2 border-rose-600' : 'text-neutral-800'
             }`}
             href={link.href}
             key={link.name}
